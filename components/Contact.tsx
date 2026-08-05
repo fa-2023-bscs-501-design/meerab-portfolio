@@ -1,0 +1,99 @@
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+export default function Contact() {
+  const contacts = [
+    {
+      title: "Email",
+      description: "Send me a message",
+      icon: <FaEnvelope />,
+      link: "mailto:meerabasif04@gmail.com",
+    },
+    {
+      title: "LinkedIn",
+      description: "Connect with me",
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/meerab-asif-3b5689411",
+    },
+    {
+      title: "GitHub",
+      description: "Check my projects",
+      icon: <FaGithub />,
+      link: "https://github.com/fa-2023-bscs-501-design",
+    },
+  ];
+
+  return (
+    <section
+      id="contact"
+      className="min-h-screen bg-black text-white flex flex-col justify-center items-center px-8"
+    >
+
+      <h2 className="text-5xl font-bold text-blue-500 mb-6">
+        Contact Me
+      </h2>
+
+
+      <p className="text-gray-400 text-lg text-center max-w-2xl mb-12">
+        I'm always interested in new opportunities, collaborations,
+        and exciting projects. Feel free to connect with me.
+      </p>
+
+
+      <div className="grid md:grid-cols-3 gap-8 max-w-5xl w-full">
+
+        {contacts.map((contact) => (
+
+          <motion.a
+            key={contact.title}
+            href={contact.link}
+            target="_blank"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+
+            className="
+            bg-gray-900
+            border border-gray-800
+            rounded-2xl
+            p-8
+            flex
+            flex-col
+            items-center
+            gap-4
+            hover:border-blue-500
+            hover:-translate-y-2
+            hover:shadow-[0_0_30px_rgba(59,130,246,0.4)]
+            transition
+            "
+          >
+
+            <div className="text-5xl text-blue-500">
+              {contact.icon}
+            </div>
+
+            <h3 className="text-xl font-bold">
+              {contact.title}
+            </h3>
+
+            <p className="text-gray-400">
+              {contact.description}
+            </p>
+
+
+          </motion.a>
+
+        ))}
+
+      </div>
+
+
+      <p className="text-gray-500 mt-16">
+        © 2026 Meerab Asif. All rights reserved.
+      </p>
+
+
+    </section>
+  );
+}
