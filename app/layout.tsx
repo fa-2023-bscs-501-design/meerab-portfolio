@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Meerab Asif | Frontend Developer",
-
   description:
-    "Meerab Asif is a Computer Science student and Frontend Developer skilled in React, Next.js, Tailwind CSS and modern web technologies.",
+    "Frontend Developer portfolio showcasing projects, skills, and modern web development experience.",
 
   keywords: [
     "Meerab Asif",
@@ -16,10 +15,14 @@ export const metadata = {
     "Portfolio",
   ],
 
+  verification: {
+    google: "bXCCdT02WgxIqGMmML0_9ZCdK1efylgnZD49cHbVncY",
+  },
+
   openGraph: {
     title: "Meerab Asif | Frontend Developer",
     description:
-      "Frontend Developer portfolio showcasing projects, skills and web development experience.",
+      "Frontend Developer portfolio showcasing projects, skills, and web development experience.",
     type: "website",
   },
 };
