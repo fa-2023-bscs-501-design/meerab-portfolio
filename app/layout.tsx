@@ -15,10 +15,9 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
 
- verification: {
+verification: {
   google: "EfU5VDmlYMDB2k5nNL9NSWOTFJaQFchSRVqR0OESZNU",
 },
-
   openGraph: {
     title: "Meerab Asif | Frontend Developer",
     description:
