@@ -5,84 +5,55 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://meerab-portfolio-six.vercel.app"),
 
   title: {
-    default: "Meerab Asif | Frontend Developer",
+    default: "Meerab Asif | Frontend Developer Portfolio",
     template: "%s | Meerab Asif",
   },
 
   description:
-    "Frontend Developer skilled in Next.js, React, JavaScript, Tailwind CSS, and Python. Explore my portfolio, projects, and technical skills.",
+    "Meerab Asif is a Computer Science student and Frontend Developer specializing in Next.js, React, Tailwind CSS, JavaScript and modern web applications.",
 
   keywords: [
     "Meerab Asif",
     "Frontend Developer",
+    "Next.js Developer",
     "React Developer",
-    "Next.js",
-    "JavaScript",
+    "Web Developer",
+    "Computer Science Student",
     "Tailwind CSS",
-    "Python",
-    "Portfolio",
+    "JavaScript",
   ],
 
-  verification: {
-    google: "EfU5VDmlYMDB2k5nNL9NSWOTFJaQFchSRVqR0OESZNU",
-  },
+  authors: [
+    {
+      name: "Meerab Asif",
+    },
+  ],
 
-  alternates: {
-    canonical: "https://meerab-portfolio-six.vercel.app",
-  },
+  creator: "Meerab Asif",
 
   openGraph: {
-    title: "Meerab Asif | Frontend Developer",
+    title: "Meerab Asif | Frontend Developer Portfolio",
     description:
-      "Portfolio showcasing my projects, skills, and experience in modern web development.",
+      "Portfolio website showcasing projects, skills and development journey.",
     url: "https://meerab-portfolio-six.vercel.app",
     siteName: "Meerab Asif Portfolio",
-    locale: "en_US",
     type: "website",
   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Meerab Asif | Frontend Developer",
-    description:
-      "Frontend Developer Portfolio built with Next.js and Tailwind CSS.",
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-  <body>
-
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Meerab Asif",
-          url: "https://meerab-portfolio-six.vercel.app",
-          email: "mailto:meerabasif04@gmail.com",
-          jobTitle: "Frontend Developer",
-          description:
-            "Frontend Developer specializing in Next.js, React, Tailwind CSS, JavaScript and Python.",
-          image: "https://meerab-portfolio-six.vercel.app/profile.png",
-          sameAs: [
-            "https://github.com/fa-2023-bscs-501-design",
-            "https://www.linkedin.com/in/meerab-asif-3b5689411"
-          ]
-        }),
-      }}
-    />
-
-    {children}
-
-  </body>
-</html>
-  
+      <body>{children}</body>
+    </html>
   );
 }
