@@ -1,33 +1,44 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
   const projects = [
     {
       title: "Portfolio Website",
+      image: "/projects/portfolio.png",
       description:
-        "A modern responsive portfolio website built with Next.js and Tailwind CSS.",
-      tech: ["Next.js", "React", "Tailwind CSS"],
+        "A modern responsive portfolio website built with Next.js and Tailwind CSS with SEO optimization and smooth animations.",
+      tech: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
       github:
         "https://github.com/fa-2023-bscs-501-design",
+      demo:
+        "https://meerab-portfolio-six.vercel.app/",
     },
 
     {
       title: "Network Sniffer",
+      image: "/projects/sniffer.png",
       description:
-        "A Python-based network packet analyzer for monitoring and analyzing traffic.",
+        "A Python-based network packet analyzer for monitoring and analyzing network traffic.",
       tech: ["Python", "Scapy", "Networking"],
       github:
         "https://github.com/fa-2023-bscs-501-design",
+      demo:
+        "",
     },
 
     {
       title: "Phishing Awareness Training",
+      image: "/projects/phishing.png",
       description:
-        "Cybersecurity awareness project explaining phishing attacks and prevention techniques.",
+        "Cybersecurity awareness project focused on phishing attacks, prevention techniques, and security education.",
       tech: ["Cyber Security", "HTML", "Documentation"],
       github:
         "https://github.com/fa-2023-bscs-501-design",
+      demo:
+        "",
     },
   ];
 
@@ -44,7 +55,6 @@ export default function Projects() {
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
 
-
         {projects.map((project) => (
 
           <motion.div
@@ -55,72 +65,98 @@ export default function Projects() {
             viewport={{ once: true }}
 
             className="
-              bg-gray-900/70
+              bg-gray-900
               border border-gray-800
               rounded-2xl
-              p-8
+              overflow-hidden
               hover:border-blue-500
-              hover:-translate-y-2
+              hover:-translate-y-3
               hover:shadow-[0_0_35px_rgba(59,130,246,0.4)]
               transition
-              duration-300
             "
           >
 
-            <h3 className="text-2xl font-bold mb-4">
-              {project.title}
-            </h3>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="
+                w-full
+                h-48
+                object-cover
+              "
+            />
 
 
-            <p className="text-gray-400 leading-7 mb-6">
-              {project.description}
-            </p>
+            <div className="p-6">
+
+              <h3 className="text-2xl font-bold mb-3">
+                {project.title}
+              </h3>
 
 
-            <div className="flex flex-wrap gap-2 mb-6">
+              <p className="text-gray-400 leading-7 mb-5">
+                {project.description}
+              </p>
 
-              {project.tech.map((item) => (
 
-                <span
-                  key={item}
-                  className="
+              <div className="flex flex-wrap gap-2 mb-6">
+
+                {project.tech.map((item)=>(
+                  <span
+                    key={item}
+                    className="
                     bg-blue-600/20
                     text-blue-400
-                    px-3
-                    py-1
+                    px-3 py-1
                     rounded-full
                     text-sm
+                    "
+                  >
+                    {item}
+                  </span>
+                ))}
+
+              </div>
+
+
+              <div className="flex gap-5">
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="
+                  flex items-center gap-2
+                  text-blue-400
+                  hover:text-blue-300
                   "
                 >
-                  {item}
-                </span>
+                  <FaGithub/>
+                  GitHub
+                </a>
 
-              ))}
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    className="
+                    flex items-center gap-2
+                    text-blue-400
+                    hover:text-blue-300
+                    "
+                  >
+                    <FaExternalLinkAlt/>
+                    Demo
+                  </a>
+                )}
+
+              </div>
 
             </div>
-
-
-            <a
-              href={project.github}
-              target="_blank"
-              className="
-                flex
-                items-center
-                gap-2
-                text-blue-400
-                hover:text-blue-300
-                transition
-              "
-            >
-              <FaGithub />
-              View on GitHub
-            </a>
-
 
           </motion.div>
 
         ))}
-
 
       </div>
 
