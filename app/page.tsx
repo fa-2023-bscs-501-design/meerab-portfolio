@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -80,6 +81,8 @@ repeat={Infinity}
 >
   Download CV
 </a>
+
+
 </div>
 
         </div>
@@ -133,6 +136,7 @@ repeat={Infinity}
   <Contact />
 </section>
 </div>
+<Footer />
     </main>
   );
 }
