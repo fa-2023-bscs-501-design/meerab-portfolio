@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Computer Science Student",
     "Tailwind CSS",
     "JavaScript",
+    "Python",
+    "Machine Learning",
   ],
 
   authors: [
@@ -53,7 +55,47 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+
+              "name": "Meerab Asif",
+
+              "url":
+                "https://meerab-portfolio-six.vercel.app",
+
+              "jobTitle":
+                "Frontend Developer",
+
+              "description":
+                "Computer Science student and Frontend Developer passionate about building modern responsive web applications using Next.js, React, JavaScript and Tailwind CSS.",
+
+              "sameAs": [
+                "https://github.com/fa-2023-bscs-501-design",
+                "https://www.linkedin.com/in/meerab-asif-3b5689411"
+              ],
+
+              "knowsAbout": [
+                "Next.js",
+                "React",
+                "JavaScript",
+                "Tailwind CSS",
+                "HTML",
+                "CSS",
+                "Python",
+                "Machine Learning",
+                "Web Development"
+              ]
+            }),
+          }}
+        />
+      </body>
     </html>
   );
 }
