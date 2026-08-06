@@ -88,6 +88,43 @@ export default function Contact() {
 
       </div>
 
+      <form
+  action="https://formspree.io/f/moeaqbnb"
+  method="POST"
+  className="w-full max-w-2xl mt-16 space-y-6"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    className="w-full p-4 rounded-xl bg-gray-900 border border-gray-700 focus:border-blue-500 outline-none"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    className="w-full p-4 rounded-xl bg-gray-900 border border-gray-700 focus:border-blue-500 outline-none"
+  />
+
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    rows={6}
+    required
+    className="w-full p-4 rounded-xl bg-gray-900 border border-gray-700 focus:border-blue-500 outline-none"
+  />
+
+  <button
+    type="submit"
+    className="bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-xl font-semibold"
+  >
+    Send Message 🚀
+  </button>
+</form>
+
 
       <p className="text-gray-500 mt-16">
         © 2026 Meerab Asif. All rights reserved.
