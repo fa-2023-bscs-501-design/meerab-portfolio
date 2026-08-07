@@ -141,11 +141,11 @@ export default function About() {
             "
           >
 
-            <img
-              src="/profile.png"
-              alt="Meerab Asif Frontend Developer"
-              className="w-full h-full object-cover"
-            />
+         <img
+  src="/profile.png"
+  alt="Meerab Asif Frontend Developer"
+  className="w-full h-full object-cover object-center"
+/>
 
           </div>
 
