@@ -37,8 +37,7 @@ image: "/projects/calculator.png",
     ],
     github:
       "https://github.com/fa-2023-bscs-501-design/OIBSIP/commit/7f80c5672108793b48490543303d6739c9822f4f",
-    demo: "",
-  },
+demo: "https://oibsip-calculator-ruddy.vercel.app/",  },
 
   {
     title: "To-Do App",
