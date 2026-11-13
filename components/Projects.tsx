@@ -6,8 +6,26 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
   const projects = [
     {
+  title: "PizzaCraft - Pizza Delivery System",
+  image: "/projects/pizzacraft.png",
+  description:
+  "A full-stack pizza delivery web application featuring user authentication, order management, an admin dashboard, inventory management, and demo payment functionality. Built to demonstrate full-stack web development skills.",
+  tech: [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JavaScript",
+    "REST API",
+  ],
+  github:
+    "https://github.com/fa-2023-bscs-501-design/OIBSIP/tree/main/WebDev-L3-Task1-PizzaDelivery",
+  demo: "",
+},
+
+    {
       title: "Personal Portfolio Website",
-      image: "/projects/portfolio.png",
+     image: "/pizzacraft.png",
       description:
         "A modern developer portfolio website built with Next.js, React, TypeScript, and Tailwind CSS. It showcases my frontend development skills, projects, responsive design practices, and SEO optimization techniques.",
       tech: [
