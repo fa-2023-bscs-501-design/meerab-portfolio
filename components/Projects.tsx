@@ -51,8 +51,7 @@ demo: "https://oibsip-calculator-ruddy.vercel.app/",  },
     ],
     github:
       "https://github.com/fa-2023-bscs-501-design/OIBSIP/commit/52393f70ba9fa746ca59234a8622b87c6b676550",
-    demo: "",
-  },
+demo: "https://oibsip-todo.vercel.app/",  },
 ];
 
   return (
