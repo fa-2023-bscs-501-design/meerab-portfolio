@@ -4,77 +4,57 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
-  const projects = [
-    {
-  title: "PizzaCraft - Pizza Delivery System",
-  image: "/projects/pizzacraft.png",
-  description:
-  "A full-stack pizza delivery web application featuring user authentication, order management, an admin dashboard, inventory management, and demo payment functionality. Built to demonstrate full-stack web development skills.",
-  tech: [
-    "React",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "JavaScript",
-    "REST API",
-  ],
-  github:
-    "https://github.com/fa-2023-bscs-501-design/OIBSIP/tree/main/WebDev-L3-Task1-PizzaDelivery",
- demo: "https://pizzacraft-client-czo5qcgyt-fa-2023-bscs-501-designs-projects.vercel.app/",
-},
+  
+const projects = [
+  {
+    title: "PizzaCraft - Pizza Delivery System",
+    image: "/pizzacraft.png",
+    description:
+      "A full-stack pizza delivery web application featuring user authentication, order management, an admin dashboard, inventory management, and demo payment functionality.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JavaScript",
+      "REST API",
+    ],
+    github:
+      "https://github.com/fa-2023-bscs-501-design/OIBSIP/tree/main/WebDev-L3-Task1-PizzaDelivery",
+    demo:
+      "https://pizzacraft-client-czo5qcgyt-fa-2023-bscs-501-designs-projects.vercel.app/",
+  },
 
-    {
-      title: "Personal Portfolio Website",
-     image: "/pizzacraft.png",
-      description:
-        "A modern developer portfolio website built with Next.js, React, TypeScript, and Tailwind CSS. It showcases my frontend development skills, projects, responsive design practices, and SEO optimization techniques.",
-      tech: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "SEO"
-      ],
-      github:
-        "https://github.com/fa-2023-bscs-501-design",
-      demo:
-        "https://meerab-portfolio-six.vercel.app/",
-    },
+  {
+    title: "Calculator",
+image: "/projects/calculator.png",
+    description:
+      "A responsive calculator application built to perform basic mathematical operations with a simple and user-friendly interface.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    github:
+      "https://github.com/fa-2023-bscs-501-design/OIBSIP/commit/7f80c5672108793b48490543303d6739c9822f4f",
+    demo: "",
+  },
 
-    {
-      title: "Python Network Sniffer",
-      image: "/projects/sniffer.png",
-      description:
-        "A Python-based network packet analyzer developed to capture and analyze network traffic. This project demonstrates networking concepts, packet inspection, and cybersecurity fundamentals.",
-      tech: [
-        "Python",
-        "Scapy",
-        "Networking",
-        "Cyber Security"
-      ],
-      github:
-        "https://github.com/fa-2023-bscs-501-design",
-      demo:
-        "",
-    },
-
-    {
-      title: "Phishing Awareness Training Project",
-      image: "/projects/phishing.png",
-      description:
-        "A cybersecurity awareness project focused on understanding phishing attacks, identifying security threats, and educating users about online safety and prevention techniques.",
-      tech: [
-        "Cyber Security",
-        "HTML",
-        "Documentation",
-        "Security Awareness"
-      ],
-      github:
-        "https://github.com/fa-2023-bscs-501-design",
-      demo:
-        "",
-    },
-  ];
+  {
+    title: "To-Do App",
+    image: "/projects/todo.png",
+    description:
+      "A task management application that helps users organize daily activities and manage their tasks through a simple interface.",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    github:
+      "https://github.com/fa-2023-bscs-501-design/OIBSIP/commit/52393f70ba9fa746ca59234a8622b87c6b676550",
+    demo: "",
+  },
+];
 
   return (
     <section
