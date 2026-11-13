@@ -20,7 +20,7 @@ export default function Projects() {
   ],
   github:
     "https://github.com/fa-2023-bscs-501-design/OIBSIP/tree/main/WebDev-L3-Task1-PizzaDelivery",
-  demo: "",
+ demo: "https://pizzacraft-client-czo5qcgyt-fa-2023-bscs-501-designs-projects.vercel.app/",
 },
 
     {
